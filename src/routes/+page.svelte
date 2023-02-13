@@ -1,6 +1,10 @@
 <script>
-	import Header from '../lib/Header.svelte';
+	import Aside from '$lib/aside/Aside.svelte';
+	import Header from '../lib/header/Header.svelte';
 </script>
 
-<Header />
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<Aside />
+<main>
+	<Header />
+	<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+</main>

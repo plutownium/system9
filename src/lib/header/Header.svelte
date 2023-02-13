@@ -33,7 +33,9 @@
 			</div>
 		</div>
 	</div>
-	<div>
+	<div
+		class="lg:border lg:border-l-midnight lg:dark:border-l-sand lg:border-t-0 lg:border-b-0 lg:border-r-0 w-20 h-20 "
+	>
 		<DayNightToggle />
 	</div>
 </nav>
