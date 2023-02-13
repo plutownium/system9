@@ -1,6 +1,8 @@
 <script>
+	import { text } from 'svelte/internal';
 	import DayNightToggle from './DayNightToggle.svelte';
 	import Hamburger from './Hamburger.svelte';
+	import HeaderItem from './HeaderItem.svelte';
 	import System9 from './System9.svelte';
 	console.log('foo');
 </script>
@@ -9,12 +11,9 @@
 	<nav class="w-full flex border-4 border-black">
 		<div id="left-box" class="w-12 h-12 flex items-center">
 			<!-- left-box -->
-			<div class=" ml-4 w-12">
+			<div class="block lg:hidden ml-4 w-12">
 				<!-- hamburger -->
 				<Hamburger />
-			</div>
-			<div>
-				<!-- logo -->
 			</div>
 		</div>
 		<div id="middle-header" class="w-full border-2 border-green-400">
@@ -24,20 +23,18 @@
 			>
 				<System9 />
 			</div>
-			<div id="desktop-header" class="hidden lg:block">
+			<div id="desktop-header" class="hidden lg:flex justify-between">
 				<div>
 					<System9 />
 				</div>
-				<div>
-					<div>
-						<ul>
-							<li>Products</li>
-							<li>Company</li>
-							<li>Partners</li>
-							<li>Contact</li>
-							<li>Jobs</li>
-						</ul>
-					</div>
+				<div class="flex">
+					<ul class="flex">
+						<HeaderItem text="Products" anchor={'#products'} />
+						<HeaderItem text="Company" anchor={'#company'} />
+						<HeaderItem text="Partners" anchor={'#partners'} />
+						<HeaderItem text="Company" anchor={'#company'} />
+						<HeaderItem text="Jobs" anchor="jobs" />
+					</ul>
 				</div>
 			</div>
 		</div>
