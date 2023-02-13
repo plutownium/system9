@@ -6,16 +6,23 @@
 </script>
 
 <div id="header-container" class="fixed w-full bg-red-500">
-	<nav class="w-full flex justify-between border-4 border-black">
-		<div id="header-left" class="w-full border-2 border-green-400">
-			<div id="mobile-header" class="w-full flex lg:hidden bg-red-400">
-				<div class="lg:hidden ml-4">
-					<!-- hamburger -->
-					<Hamburger />
-				</div>
-				<div class="w-full border-2 border-blue-500">
-					<System9 />
-				</div>
+	<nav class="w-full flex border-4 border-black">
+		<div id="left-box" class="w-12 h-12 flex items-center">
+			<!-- left-box -->
+			<div class=" ml-4 w-12">
+				<!-- hamburger -->
+				<Hamburger />
+			</div>
+			<div>
+				<!-- logo -->
+			</div>
+		</div>
+		<div id="middle-header" class="w-full border-2 border-green-400">
+			<div
+				id="mobile-header"
+				class="w-full h-full flex lg:hidden justify-center items-center bg-red-800"
+			>
+				<System9 />
 			</div>
 			<div id="desktop-header" class="hidden lg:block">
 				<div>
